@@ -45,6 +45,11 @@ $dark_grey: #3f3d4e;
   padding: .3rem 1.5rem;
 }
 
+.button_large {
+  padding: 1rem 5rem;
+  font-size: 1.35rem;
+}
+
 .cf:after
 .cf:before {
   content: " ";
@@ -62,6 +67,7 @@ $dark_grey: #3f3d4e;
   background-image: url('banner_background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   header {
     padding: 2rem 0;
   }
@@ -108,6 +114,12 @@ $dark_grey: #3f3d4e;
         margin: 0 .75rem;
       }
     }
+    .see_more {
+      position: absolute;
+      left: 50%;
+      margin-left: -15px;
+      bottom: 60px;
+    }
   }
 }
 
@@ -115,7 +127,7 @@ $dark_grey: #3f3d4e;
 
 #services {
   background: $grey_background;
-  padding: 2rem 0 6.5rem 0;
+  padding: 2rem 0 22.5rem 0;
   position: relative;
   .service {
     background: $white;
@@ -175,7 +187,7 @@ $dark_grey: #3f3d4e;
 
 #past_work {
   background: $dark_grey;
-  padding: 5rem 0 25rem 0;
+  padding: 5rem 0 45rem 0;
   text-align: center;
   position: relative;
   /* overflow: hidden; */
@@ -193,6 +205,9 @@ $dark_grey: #3f3d4e;
     list-style: none;
     padding: 0;
     margin: 2rem 0;
+    a {
+      text-decoration: none;
+    }
     li {
       width: 9px;
       height: 9px;
@@ -249,7 +264,42 @@ $dark_grey: #3f3d4e;
         -moz-transform: scale(.8, .8);
         transform: scale(.8, .8);
         z-index: 2;
+      }
+    }
   }
- }
 }
+
+
+// ------------ Contact -------------------- //
+
+
+#contact {
+  background: $grey_background;
+  padding: 7rem 0 8rem 0;
+  text-align: center;
+  .title {
+    font-size: 2.5rem;
+    color: $dark_grey;
+    margin: 0;
+  }
+  .sub_title {
+    font-size: 1.5rem;
+    color: $grey_copy;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 4rem auto;
+  }
+}
+
+footer {
+  padding: 1rem 0;
+  .copyright {
+    text-align: center;
+    font-weight: 700;
+    color: $grey_copy;
+    a {
+      color: $highlight;
+      text-decoration: none;
+    }
+  }
 }
